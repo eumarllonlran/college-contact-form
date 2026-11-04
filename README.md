@@ -45,7 +45,7 @@ No installation required:
 
 1. Download or clone the repository
    ```bash
-   git clone https://github.com/eumarllonln/college-contact-form.git
+   git clone https://github.com/eumarllonlrn/college-contact-form.git
    ```
 2. Open `index.html` in your browser
 
@@ -93,4 +93,4 @@ No installation required:
 
 ## Author
 
-Built by **Marllon Lorran** — [LinkedIn](https://www.linkedin.com/in/eumarllonln/) · [GitHub](https://github.com/eumarllonln)
+Built by **Marllon Lorran** — [LinkedIn](https://www.linkedin.com/in/eumarllonlrn/) · [GitHub](https://github.com/eumarllonlrn)
