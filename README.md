@@ -2,7 +2,7 @@
 
 A contact page for a fictional college, built with **vanilla HTML, CSS, and JavaScript** (no frameworks). The project started as a front-end exercise to practice semantic markup, responsive styling, and basic interactivity.
 
-🔗 **Live demo:** https://eumarllonln.github.io/college-contact-form/
+🔗 **Live demo:** https://eumarllonlrn.github.io/college-contact-form/
 
 ## Features
 
