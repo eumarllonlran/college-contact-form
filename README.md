@@ -2,9 +2,7 @@
 
 Uma página de contato para uma faculdade fictícia, feita com **HTML, CSS e JavaScript puros** (sem frameworks). O projeto começou como um exercício de front-end para praticar marcação semântica, estilização responsiva e interatividade básica.
 
-🔗 **Demonstração online:** https://eumarllonlrn.github.io/college-contact-form/
-
-## Funcionalidades
+🔗 **Demonstração online:** https://eumarllonlrn.github.io/formulario-contato-faculdade/
 
 - Formulário dividido em duas seções: **Sobre você** e **Sua mensagem**
 - Validação nativa do navegador (campos obrigatórios, formato de e-mail, tamanho mínimo)
