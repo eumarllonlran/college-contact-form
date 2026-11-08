@@ -2,7 +2,7 @@
 
 Uma página de contato para uma faculdade fictícia, feita com **HTML, CSS e JavaScript puros** (sem frameworks). O projeto começou como um exercício de front-end para praticar marcação semântica, estilização responsiva e interatividade básica.
 
-🔗 **Demonstração online:** https://eumarllonlrn.github.io/formulario-contato-faculdade/
+🔗 **Demonstração online:** https://eumarllonlran.github.io/formulario-contato-faculdade/
 
 ## Funcionalidades
 
@@ -45,7 +45,7 @@ Não precisa instalar nada:
 
 1. Baixe ou clone o repositório
    ```bash
-   git clone https://github.com/eumarllonlrn/formulario-contato-faculdade.git
+   git clone https://github.com/eumarllonlran/formulario-contato-faculdade.git
    ```
 2. Abra o `index.html` no navegador
 
@@ -93,4 +93,4 @@ Não precisa instalar nada:
 
 ## Autor
 
-Feito por **Marllon Lorran** — [LinkedIn](https://www.linkedin.com/in/eumarllonlrn/) · [GitHub](https://github.com/eumarllonlrn)
+Feito por **Marllon Lorran** — [LinkedIn](https://www.linkedin.com/in/eumarllonlran/) · [GitHub](https://github.com/eumarllonlran)
