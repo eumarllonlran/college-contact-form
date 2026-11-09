@@ -85,7 +85,7 @@ No installation required:
 
 ## Roadmap
 
-- [ ] Send the data to a real back end or form service (e.g., Formspree)
+- [ ] Send the data to a real backend or form service (e.g., Formspree)
 - [x] Add dark mode with `prefers-color-scheme`
 - [x] Link error messages to fields with `aria-describedby`
 - [x] Place the chip group in its own `<fieldset>`
