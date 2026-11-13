@@ -54,7 +54,7 @@ function configurarFormulario(formulario) {
         evento.preventDefault();
 
         botaoEnviar.disabled = true;
-        botaoEnviar.textContent = "Enviando…";
+        botaoEnviar.textContent = "Sending…";
 
         salvarNome(formulario.elements["nome"].value.trim());
         window.location.href = formulario.action;

@@ -1,8 +1,6 @@
-# Contact Us — Faculdade Horizonte
+# Contact Us — Horizonte College
 
 A contact page for a fictional college, built with **vanilla HTML, CSS and JavaScript** (no frameworks). The project started as a front-end exercise to practice semantic markup, responsive styling and basic interactivity.
-
-> The page content is in Brazilian Portuguese, since the college is set in Brazil.
 
 🔗 **Live demo:** https://eumarllonlran.github.io/formulario-contato-faculdade/
 
