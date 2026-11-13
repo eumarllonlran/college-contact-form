@@ -1,96 +1,98 @@
-# Fale Conosco — Faculdade Horizonte
+# Contact Us — Faculdade Horizonte
 
-Uma página de contato para uma faculdade fictícia, feita com **HTML, CSS e JavaScript puros** (sem frameworks). O projeto começou como um exercício de front-end para praticar marcação semântica, estilização responsiva e interatividade básica.
+A contact page for a fictional college, built with **vanilla HTML, CSS and JavaScript** (no frameworks). The project started as a front-end exercise to practice semantic markup, responsive styling and basic interactivity.
 
-🔗 **Demonstração online:** https://eumarllonlran.github.io/formulario-contato-faculdade/
+> The page content is in Brazilian Portuguese, since the college is set in Brazil.
 
-## Funcionalidades
+🔗 **Live demo:** https://eumarllonlran.github.io/formulario-contato-faculdade/
 
-- Formulário dividido em duas seções: **Sobre você** e **Sua mensagem**
-- Validação nativa do navegador (campos obrigatórios, formato de e-mail, tamanho mínimo)
-- Mensagens de erro exibidas só depois que o usuário interage com o campo, ligadas a ele por `aria-describedby` para leitores de tela
-- Seletor de perfil em formato de "chips" (Futuro aluno, Aluno atual etc.)
-- Contador de caracteres em tempo real no campo de mensagem
-- Máscara automática de telefone no formato brasileiro: `(00) 00000-0000`
-- Botão de envio muda para "Enviando…" para evitar envios duplicados
-- Página de agradecimento que cumprimenta o usuário pelo nome
-- Layout responsivo (funciona bem no celular)
-- Modo escuro automático, que segue o tema do sistema
-- Respeita a configuração de acessibilidade "reduzir movimento"
+## Features
 
-## Tecnologias
+- Form split into two sections: **About you** and **Your message**
+- Native browser validation (required fields, email format, minimum length)
+- Error messages shown only after the user interacts with a field, linked to it via `aria-describedby` for screen readers
+- Profile selector styled as "chips" (Prospective student, Current student, etc.)
+- Live character counter on the message field
+- Automatic phone mask in Brazilian format: `(00) 00000-0000`
+- Submit button switches to "Sending…" to prevent duplicate submissions
+- Thank-you page that greets the user by name
+- Responsive layout (works well on mobile)
+- Automatic dark mode that follows the system theme
+- Respects the "reduce motion" accessibility setting
 
-| Tecnologia | Usada para |
+## Tech stack
+
+| Technology | Used for |
 | --- | --- |
-| HTML5 | Estrutura semântica e validação do formulário |
-| CSS3 | Propriedades personalizadas, Grid, Flexbox, `clamp()`, media queries e pseudo-classes |
-| JavaScript | Tratamento de eventos, manipulação do DOM e `sessionStorage` |
-| Google Fonts | Fraunces (títulos) e Inter (texto) |
+| HTML5 | Semantic structure and form validation |
+| CSS3 | Custom properties, Grid, Flexbox, `clamp()`, media queries and pseudo-classes |
+| JavaScript | Event handling, DOM manipulation and `sessionStorage` |
+| Google Fonts | Fraunces (headings) and Inter (body text) |
 
-## Estrutura do projeto
+## Project structure
 
 ```
 .
-├── index.html         # Página do formulário de contato
-├── obrigado.html      # Página exibida após o envio
+├── index.html         # Contact form page
+├── obrigado.html      # Page shown after submission
 ├── css/
-│   └── estilos.css    # Todos os estilos
+│   └── estilos.css    # All styles
 └── js/
-    └── principal.js   # Contador de caracteres, máscara de telefone e envio do formulário
+    └── principal.js   # Character counter, phone mask and form submission
 ```
 
-## Como usar
+## Getting started
 
-Não precisa instalar nada:
+No installation needed:
 
-1. Baixe ou clone o repositório
+1. Download or clone the repository
    ```bash
    git clone https://github.com/eumarllonlran/formulario-contato-faculdade.git
    ```
-2. Abra o `index.html` no navegador
+2. Open `index.html` in your browser
 
-> Dica: no VS Code, a extensão **Live Server** recarrega a página automaticamente a cada alteração.
+> Tip: in VS Code, the **Live Server** extension reloads the page automatically on every change.
 
-## O que eu aprendi
+## What I learned
 
 ### HTML
 
-- Estruturei o formulário com tags **semânticas**: `<main>`, `<form>`, `<fieldset>` e `<legend>` para agrupar campos relacionados.
-- Associei cada `<label>` ao seu campo usando `for` e `id`, o que melhora a acessibilidade e permite clicar no texto do rótulo para focar o campo.
-- Agrupei os chips de perfil em um `<fieldset>` próprio com `<legend>`, que é a forma nativa de rotular um grupo de botões de rádio.
-- Liguei cada mensagem de erro ao seu campo com `aria-describedby`, para que os leitores de tela a anunciem.
-- Usei os tipos de input adequados (`email`, `tel`, `radio`, `checkbox`) e atributos como `required`, `minlength`, `maxlength` e `autocomplete`, para que o próprio navegador valide os dados e ajude o usuário.
-- Aprendi a diferença entre usar `<br>` para dar espaçamento e deixar o espaçamento por conta do CSS.
+- Structured the form with **semantic** tags: `<main>`, `<form>`, `<fieldset>` and `<legend>` to group related fields.
+- Linked each `<label>` to its field with `for` and `id`, which improves accessibility and lets users click the label to focus the field.
+- Grouped the profile chips in their own `<fieldset>` with a `<legend>`, the native way to label a group of radio buttons.
+- Linked each error message to its field with `aria-describedby`, so screen readers announce it.
+- Used the right input types (`email`, `tel`, `radio`, `checkbox`) and attributes such as `required`, `minlength`, `maxlength` and `autocomplete`, so the browser itself validates the data and helps the user.
+- Learned the difference between using `<br>` for spacing and leaving spacing to CSS.
 
 ### CSS
 
-- Organizei cores e tamanhos em **propriedades personalizadas do CSS** (`:root`), para que o tema possa ser alterado editando poucos valores.
-- Adicionei **modo escuro** com `prefers-color-scheme` redefinindo apenas essas variáveis, e desativei as transições com `prefers-reduced-motion`.
-- Usei `:is()` para aplicar uma regra a vários seletores e `clamp()` para um título que se ajusta ao tamanho da tela.
-- Usei **Grid** para colocar campos lado a lado e **Flexbox** para alinhar rótulos, chips e a caixa de seleção.
-- Deixei o layout **responsivo** com `@media`: no celular, os campos ficam em uma única coluna e o botão ocupa a largura toda.
-- Estilizei os estados de interação: `:hover`, `:focus-visible`, `:checked` e `:user-invalid`.
-- Transformei os botões de rádio em chips escondendo visualmente o input e estilizando o `<span>` vizinho com o combinador `+`.
-- **Um bug que me ensinou muito:** esqueci um `;` e uma `}` em uma regra, e todo o CSS abaixo dela parou de funcionar. Aprendi a conferir se as chaves estão bem fechadas e a prestar atenção nos avisos do editor.
+- Organized colors and sizes in **CSS custom properties** (`:root`), so the theme can be changed by editing just a few values.
+- Added **dark mode** with `prefers-color-scheme` by redefining only those variables, and disabled transitions with `prefers-reduced-motion`.
+- Used `:is()` to apply one rule to several selectors and `clamp()` for a heading that scales with the screen size.
+- Used **Grid** to place fields side by side and **Flexbox** to align labels, chips and the checkbox.
+- Made the layout **responsive** with `@media`: on mobile, fields stack in a single column and the button spans the full width.
+- Styled interaction states: `:hover`, `:focus-visible`, `:checked` and `:user-invalid`.
+- Turned radio buttons into chips by visually hiding the input and styling the adjacent `<span>` with the `+` combinator.
+- **A bug that taught me a lot:** I forgot a `;` and a `}` in one rule, and all the CSS below it stopped working. I learned to check that braces are properly closed and to pay attention to editor warnings.
 
 ### JavaScript
 
-- Dividi o script em funções pequenas e com nomes claros (`formatarTelefone`, `salvarNome`, `recuperarNome`, `configurarFormulario`, `configurarPaginaObrigado`), cada uma com uma única responsabilidade.
-- Selecionei elementos com `getElementById` e `form.elements`, e tratei as ações do usuário com `addEventListener`.
-- Criei um **contador de caracteres** atualizado no evento `input`.
-- Criei uma **máscara de telefone** usando uma expressão regular (`/\D/g`) para manter só os dígitos antes de formatá-los.
-- No envio, chamei `evento.preventDefault()`, desativei o botão, guardei o nome no `sessionStorage` e redirecionei para a página definida no `action` do formulário.
-- Usei `try/catch` para que a página continue funcionando mesmo se o navegador bloquear o armazenamento.
-- Aprendi a usar **um único arquivo JS em duas páginas**, verificando se cada elemento existe antes de usá-lo.
+- Split the script into small, clearly named functions (`formatarTelefone`, `salvarNome`, `recuperarNome`, `configurarFormulario`, `configurarPaginaObrigado`), each with a single responsibility.
+- Selected elements with `getElementById` and `form.elements`, and handled user actions with `addEventListener`.
+- Built a **character counter** updated on the `input` event.
+- Built a **phone mask** using a regular expression (`/\D/g`) to keep only digits before formatting them.
+- On submit, called `event.preventDefault()`, disabled the button, saved the name to `sessionStorage` and redirected to the page set in the form's `action`.
+- Used `try/catch` so the page keeps working even if the browser blocks storage.
+- Learned to use **a single JS file across two pages** by checking that each element exists before using it.
 
-## Próximos passos
+## Next steps
 
-- [ ] Enviar os dados para um backend de verdade ou um serviço de formulários (por exemplo, Formspree)
-- [x] Adicionar modo escuro com `prefers-color-scheme`
-- [x] Ligar as mensagens de erro aos campos com `aria-describedby`
-- [x] Colocar o grupo de chips em um `<fieldset>` próprio
-- [ ] Adicionar um botão para alternar manualmente entre tema claro e escuro
+- [ ] Send the data to a real backend or a form service (e.g., Formspree)
+- [x] Add dark mode with `prefers-color-scheme`
+- [x] Link error messages to fields with `aria-describedby`
+- [x] Put the chip group in its own `<fieldset>`
+- [ ] Add a button to manually toggle between light and dark themes
 
-## Autor
+## Author
 
-Feito por **Marllon Lorran** — [LinkedIn](https://www.linkedin.com/in/eumarllonlran/) · [GitHub](https://github.com/eumarllonlran)
+Built by **Marllon Lorran** — [LinkedIn](https://www.linkedin.com/in/eumarllonlran/) · [GitHub](https://github.com/eumarllonlran)
